@@ -1,1 +1,2 @@
-# CPC357-IoT-Project
+# CPC357-IoT-Project Smart Agriculture
+This project is built to facilitate farmers, particularly paddy farmers to automate irrigation system and to wisely plan when to plant and harvest paddy according to weather forecast feature. Why paddy? Malaysia has been facing problem with shortage supply of rice due to several factors, mainly extreme weather conditions. This project aims to tackle this problem by providing weather forecast feature, automated irrigation system based on sensor data and pest alert system.
