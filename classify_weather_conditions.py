@@ -5,7 +5,6 @@ from sklearn.metrics import classification_report, roc_auc_score
 from imblearn.over_sampling import SMOTE
 from collections import Counter
 import os
-import joblib
 
 # Step 1: Load and preprocess the dataset
 file_path = "/Users/auninasuha/Documents/USM/SEM 7/CPC357/Project/Dataset/Merged_sensor_data.csv"  # Replace with your file path
@@ -54,7 +53,7 @@ y_pred_proba = model.predict_proba(X_test)
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
 
-# Step 8.1: Calculate ROC AUC for each class
+# Calculate ROC AUC for each class
 roc_auc_scores = {}
 classes = ["Sunny", "Rainy", "Cloudy"]
 
@@ -78,22 +77,10 @@ cv_scores = cross_val_score(model, X_train_resampled, y_train_resampled, cv=skf,
 print(f"Cross-validated ROC-AUC scores: {cv_scores}")
 print(f"Mean ROC-AUC score: {cv_scores.mean()}")
 
-# Step 10: Save the trained model
-# Define the directory and file path
-#model_directory = "/Users/auninasuha/Documents/USM/SEM 7/CPC357/Project/Machine Learning Model/"
-#model_file_path = os.path.join(model_directory, "weather_classification_model.pkl")
-
-# Create the directory if it doesn't exist
-#os.makedirs(model_directory, exist_ok=True)
-
-# Save the model
-#joblib.dump(model, model_file_path)
-#print(f"Model saved as '{model_file_path}'")
-
-# Step 11: Make predictions on the entire dataset
+# Step 10: Make predictions on the entire dataset
 data['Predicted Weather Condition'] = model.predict(X)
 
-# Step 12: Save the updated DataFrame to a new CSV file
+# Step 11: Save the updated DataFrame to a new CSV file
 output_file_path = "/Users/auninasuha/Documents/USM/SEM 7/CPC357/Project/Dataset/paddy_sensor_data.csv"
 data.to_csv(output_file_path, index=False)
 print(f"Predictions saved to '{output_file_path}'")
