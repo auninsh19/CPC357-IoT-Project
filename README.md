@@ -11,7 +11,15 @@ This project involves hardware components like:
   5. PIR sensor - To detect pest within paddy field area
   6. Water pump - To demonstrate irrigation system
   7. Buzzer/Phone speaker - To send bird or pest away with noise
+  8. Relay module - To control water pump
+  9. Breadboard
+  10. Jumper wires
 
-For software, this project use V-One platform for data aggregation, data visualisation, data analysis, and machine learning deployment.
+For software, this project use 
+  1. V-One platform for data aggregation, data visualisation, data analysis, and machine learning deployment.
+  2. Arduino IDE and necessary libraries to enable the integration between hardwares and V-One platform.
+  3. Necessary python libraries to work on data preprocessing and machine learning model.
+  4. Sublime Text Editor
+  5. Terminal to run python.
 
 As for the dataset, the dataset from each sensor are bind together into one dataset named Merged_sensor_data.csv by running bind_sensor_data.py. Then, Merged_sensor_data.csv is used for training machine learning model, specifically Random Forest Classifier, locally (predict_weather_conditions.py) to get the desired dataset with an additional column Weather Condition, and saved as paddy_sensor_data.csv. This step is to prepare the data before uploading the data into V-One for machine learning deployment.
