@@ -83,4 +83,3 @@ data['Predicted Weather Condition'] = model.predict(X)
 output_file_path = "/Users/auninasuha/Documents/USM/SEM 7/CPC357/Project/Dataset/paddy_sensor_data.csv"
 data.to_csv(output_file_path, index=False)
 print(f"Predictions saved to '{output_file_path}'")
-
