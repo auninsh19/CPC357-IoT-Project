@@ -2,7 +2,7 @@
 This project is built to facilitate farmers, particularly paddy farmers to automate irrigation system and to wisely plan when to plant and harvest paddy according to weather forecast feature. 
 
 ## Why paddy? 
-Malaysia has been facing problem with shortage supply of rice due to several factors, like extreme weather conditions, inadequate nutrient and pest. This project aims to tackle this problem by providing weather forecast feature, automated irrigation system based on sensor data and bird pest control system.
+Malaysia has been facing problem with shortage supply of rice due to several factors, like extreme weather conditions and inadequate nutrient. This project aims to tackle this problem by providing weather forecast feature and automated irrigation system based on sensor data.
 
 Not to mention, this project aligns with United Nation SDG 2 (Zero Hunger), to achieve sustainable food production and ensure sufficient food supply all year around.
 
@@ -12,12 +12,11 @@ This project involves hardware components like:
   2. Moisture sensor - To measure the moisture level of soil
   3. Rain sensor - To measure the presence of rain
   4. Ultrasonic sensor - To measure the water depth of paddy field
-  5. PIR sensor - To detect pest within paddy field area
-  6. Water pump - To demonstrate irrigation system
-  7. Buzzer/Phone speaker - To send bird or pest away with noise
-  8. Relay module - To control water pump
-  9. Breadboard
-  10. Jumper wires
+  5. Water pump - To demonstrate irrigation system
+  6. Buzzer/Phone speaker - To send bird or pest away with noise
+  7. Relay module - To control water pump
+  8. Breadboard and jumper wire
+  9. Jumper wires
 
 ## Software Used
 For software, this project use 
