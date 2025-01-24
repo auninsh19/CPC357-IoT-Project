@@ -16,6 +16,8 @@ This project involves hardware components like:
   6. Relay module - To control water pump
   7. Breadboard and jumper wire
 
+![Alt text](CPC357-IoT-Project/Breadboard Circuit Diagram.png)
+
 ## Software Used
 For software, this project use 
   1. V-One platform - For data aggregation, data visualisation, data analysis, and machine learning deployment.
