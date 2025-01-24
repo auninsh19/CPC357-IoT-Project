@@ -37,8 +37,8 @@ VOneMqttClient voneClient;
 unsigned long lastMsgTime = 0;
 
 // Water level thresholds in cm (Early growth state)
-const int SafeWaterLevelMin = 2;  // Minimum safe water level
-const int SafeWaterLevelMax = 4; // Maximum safe water level
+const int SafeWaterLevelMin = 4;  // Minimum safe water level
+const int SafeWaterLevelMax = 6; // Maximum safe water level
 
 void setup_wifi() {
 
