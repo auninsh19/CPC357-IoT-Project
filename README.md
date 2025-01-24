@@ -1,4 +1,4 @@
-# CPC357-IoT-Project Smart Agriculture
+# CPC357-IoT-Project Smart Agriculture for Paddy
 This project is built to facilitate farmers, particularly paddy farmers to automate irrigation system and to wisely plan when to plant and harvest paddy according to weather forecast feature. 
 
 ## Why paddy? 
